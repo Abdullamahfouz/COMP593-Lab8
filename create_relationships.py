@@ -20,9 +20,8 @@ def main():
     
 def create_relationships_table():
     """Creates the relationships table in the DB"""
-    con = sqlite3.connect('social_network.db')
+    con = sqlite3.connect(db_path)
     cur = con.cursor()
-    
     create_relationships_table_query= """
         CREATE TABLE IF NOT EXISTS relationships
         (
