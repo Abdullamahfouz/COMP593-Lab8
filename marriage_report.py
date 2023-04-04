@@ -28,7 +28,7 @@ def get_married_couples():
     """
     con = sqlite3.connect(db_path)
     cur = con.cursor()
-    query =  """
+    query = f"""
          SELECT person1.name , person2.name, start_date FROM relationships
          JOIN people person1 ON person1_id = person1.id
          JOIN people person2 ON person2_id = person2.id
