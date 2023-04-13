@@ -1,5 +1,7 @@
 __pycache__/
-social_network.db
+
 *.db
+social_network.db
+
 *.csv
 married_couples.csv
